@@ -13,7 +13,7 @@ const char LispLibrary[] PROGMEM = "";
 #define printfreespace
 // #define printgcs
 // #define sdcardsupport
-// #define gfxsupport
+#define gfxsupport
 // #define lisplibrary
 #define assemblerlist
 // #define lineeditor
@@ -34,12 +34,12 @@ const char LispLibrary[] PROGMEM = "";
 #define COLOR_BLACK 0
 
 // Adafruit PyBadge/PyGamer
-#define TFT_CS        44  // Chip select
-#define TFT_RST       46  // Display reset
-#define TFT_DC        45  // Display data/command select
-#define TFT_BACKLIGHT 47  // Display backlight pin
-#define TFT_MOSI      41  // Data out
-#define TFT_SCLK      42  // Clock out
+#define TFT_CS        9   // Chip select
+#define TFT_RST       12  // Display reset
+#define TFT_DC        8   // Display data/command select
+#define TFT_BACKLIGHT 25  // Display backlight pin
+#define TFT_MOSI      11  // Data out
+#define TFT_SCLK      10  // Clock out
 Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
 #endif
 
